@@ -1,4 +1,4 @@
-// this is a program that takes  speed of a car e.g 80. as input
+// this is a program that takes  speed of a car e.g 80. as input and prints out demerit points 
 // If the speed is less than 70, it prints print “Ok”. 
 // Otherwise, for every 5 km/s above the speed limit (70), 
 // it should give the driver one demerit point and print the total number of demerit points.
