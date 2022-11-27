@@ -1,23 +1,20 @@
 // Grade generator 
 //grades students based on results they obtained 
-    // A > 79,
-    // B - 60 to 79, 
-    // C - 59 to 49,
-    // D - 40 to 49,
-    // E - less 40.
-
+   
     function gradeGenerator(grade){
-        if (grade > 79){
+        if (grade >= 80 && grade <= 100){
             return `A`
-        } else if(grade >= 60){
+        } else if(grade >= 60 && grade <= 79){
              return `B`
-        }else if(grade >= 49){
+        }else if(grade >= 50 && grade <= 59){
             return `C`
-        }else if(grade >= 40){
+        }else if(grade >= 40 && grade <= 49){
             return `D`
-        }else{
+        }else if (grade < 39){
             return `E`
+        }else{
+            return `please press a valid number`
         }
     }
     
-    console.log(gradeGenerator(4))
+    console.log(gradeGenerator(800))
