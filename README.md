@@ -16,7 +16,7 @@ The project consists of three mini-projects/tests.
 ## Documentation
 
 ### Student Grade Generator (Toy Problem)
-this a program that prompts the user to input student marks.
+this a program that takes student marks as inputs.
 The input should be between 0 and 100. Then output the correct grade: 
 
 A > 79, B - 60 to 79, C -  59 to 49, D - 40 to 49, E - less 40.
@@ -24,23 +24,17 @@ A > 79, B - 60 to 79, C -  59 to 49, D - 40 to 49, E - less 40.
 This program can be used in secondary schools and Universities 
 to automatically Generate student’s grade based on how much they scored on tests
 
+pass in any value to the argument and run node index.js to run this test
+
 
 
 ### Speed Detector (Toy Problem)
 
-Sadly, the festive season has seen reports of road accidents dominating news headlines over the years. It has become almost predictable that accident rates will surge during this season. That need not be the case. There is an evident need to do everything to discard this gloomy trend. We should not be fatalistic and resign ourselves to these depressing platitudes and saddening statistics. As a software engineering student at one of the most prestigious boot camps in the country, I was tasked to come up with a tech solution to this menace hence **The speed detector program**
+This is a program that takes as input the speed of a car e.g 80. If the speed is less than 70, it prints “Ok”. Otherwise, for every 5 km/s above the speed limit (70), it will give the driver one demerit point and print the total number of demerit points.
 
-This is a program that takes as input the speed of a
-car e.g 80. If the speed is less than 70,
-it prints “Ok”. Otherwise, for every
-5 km/s above the speed limit (70), it will
-give the driver one demerit point and print the total 
-number of demerit points.
+For example, if the speed is 80, it will print: “Points: 2”. If the driver gets more than 12 points, the function will print: “License suspended”.
 
-For example, if the speed is 80, it will print: “Points: 2”. 
-If the driver gets more than 12 points, the function will print: “License suspended”.
-
-The fear of license suspension will keep the drivers in check and resist the urge to Overspeed 
+ to run this test pass any value in the argument then run node speed.js 
 
 ### Net Salary Calculator (Toy Problem)
 This is a program whose major task is to calculate an individual’s Net Salary by getting the inputs of basic salary and benefits. Calculate the payee (i.e. Tax), NHIFDeductions, NSSFDeductions, gross salary, and net salary. 
@@ -50,6 +44,8 @@ https://www.aren.co.ke/payroll/taxrates.htm
 
 https://www.kra.go.ke/en/individual/calculate-tax/calculating-tax/paye
 
+
+To run this test pass in your salary and benefits in the arguments then run node salary.js
 
 
 
@@ -83,7 +79,10 @@ Start the server
 
 ## Running Tests
 
-To run tests, run the following command
+To run the tests pass any value in the arguments
+
+Then, run the following command
+
 
 ```bash
   node <filename>

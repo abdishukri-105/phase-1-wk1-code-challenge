@@ -16,5 +16,6 @@
             return `please press a valid number`
         }
     }
-    
-    console.log(gradeGenerator(800))
+
+    // pass your grade here
+    console.log(gradeGenerator())

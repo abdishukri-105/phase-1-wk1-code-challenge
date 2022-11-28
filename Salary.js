@@ -9,7 +9,7 @@ function calculateNetSalary(salary, benefits){
       if(grossSalary() < 2999){
        return  0
    }else {
-       return ((grossSalary() * 12)/100)
+       return ((grossSalary() * 6)/100)
    } 
     
    }
@@ -63,11 +63,11 @@ function calculateNetSalary(salary, benefits){
           return 1700
       }
   }
-   // calculate net salary 
+   
    // net salary  = gross salary - deductions
     let netsalary = grossSalary() - (calcNssf() + payee() + calcNhif())
     return netsalary
   }
-  
-  console.log(calculateNetSalary(75000,10000))
+  // pass your salary and benefits here
+  console.log(calculateNetSalary())
     
