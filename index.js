@@ -13,9 +13,9 @@
         }else if (grade < 39){
             return `E`
         }else{
-            return `please press a valid number`
+            return `please enter a valid number`
         }
     }
 
     // pass your grade here
-    console.log(gradeGenerator())
+    console.log(gradeGenerator(678))

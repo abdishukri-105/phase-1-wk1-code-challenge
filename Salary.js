@@ -1,6 +1,6 @@
 
 // function to calculate net salary
-function calculateNetSalary(salary, benefits){
+function calculateNetSalary(salary, benefits = 0){
     //  determine gross salary
      const grossSalary = () => salary + benefits
      
@@ -8,22 +8,11 @@ function calculateNetSalary(salary, benefits){
      const calcNssf = () => {
       if(grossSalary() < 2999){
        return  0
-   }else {
-       return ((grossSalary() * 6)/100)
+     }else {
+       return 1080
    } 
     
    }
-   // calculate payee 
-   const payee = () => {
-      if (grossSalary() < 24000){
-          return ((grossSalary() * 10)/100)
-      }else if(grossSalary() <  32333){
-         return ((grossSalary() * 25)/100)
-      }else if(grossSalary() > 32334 ){
-          return ((grossSalary() * 30)/100)
-      } 
-   return payee()
-  }
   
   //calculate nhif
   const calcNhif = () => {
@@ -63,11 +52,27 @@ function calculateNetSalary(salary, benefits){
           return 1700
       }
   }
-   
-   // net salary  = gross salary - deductions
-    let netsalary = grossSalary() - (calcNssf() + payee() + calcNhif())
-    return netsalary
+
+   // calculate payee 
+   const payee = () => {
+    if (grossSalary() < 24000){
+        return ((grossSalary() * 10)/100)
+    }else if(grossSalary() <  32333){
+       return ((grossSalary() * 25)/100)
+    }else if(grossSalary() > 32334 ){
+        return ((grossSalary() * 30)/100)
+    } 
+ return payee()
+}
+
+   // taxable income  = gross salary - nssf and nhif
+    let taxableIncome = grossSalary() - (calcNssf() +calcNhif())
+    // netsalary = taxable income - payee
+    let netSalary = taxableIncome - payee()
+
+    return netSalary
   }
+
   // pass your salary and benefits here
   console.log(calculateNetSalary())
     

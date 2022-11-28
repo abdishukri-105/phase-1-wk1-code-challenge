@@ -92,6 +92,10 @@ Then, run the following command
 
 ## Author
 - [@abdishukri-105](https://github.com/abdishukri-105)
+
+## license
+[ISO](https://opensource.org/licenses/ISC)
+
 ## Acknowledgements
 
 - Dennis Kiboi - Technical Mentor
