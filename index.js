@@ -18,4 +18,4 @@
     }
 
     // pass your grade here
-    console.log(gradeGenerator(678))
+    console.log(gradeGenerator( ))

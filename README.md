@@ -47,22 +47,31 @@ https://www.kra.go.ke/en/individual/calculate-tax/calculating-tax/paye
 
 To run this test pass in your salary and benefits in the arguments then run node salary.js
 
+# Getting Started
+In order for you to use the content on this repo ensure you have the following:
 
+- A computer that runs on either of the following; (Windows 7+, Linux, Mac OS)
+- nodejs 9.0+
+- Some bit of patience for your own sanity.
 
+## Installation
 
-## Run Locally
+To use this repo on your machine requires some simple steps
 
-Clone the project
+- Open a terminal / command line interface on your computer
+- Clone the repo by using the following:
 
-```bash
-  git clone git@github.com:abdishukri-105/phase-1-wk1-code-challenge.git
-```
+        git clone https://github.com/abdishukri-105/phase-1-wk1-code-challenge
 
-Go to the project directory
+- Be patient as it creates a copy on your local machine for you.
+- Change directory to the repo folder:
 
-```bash
-  cd my-project
-```
+        cd phase-1-wk-1-code-challenge
+
+- (Optional) Open it in ``Visual Studio Code``
+
+        code .
+
 
 Install dependencies
 
@@ -71,11 +80,6 @@ Install dependencies
 ```
 
 Start the server
-
-```bash
-  npm run start
-```
-
 
 ## Running Tests
 
