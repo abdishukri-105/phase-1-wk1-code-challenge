@@ -1,15 +1,16 @@
-
-// speed detector function
 function speedDetector(speed){
-    if (speed < 70){
-       return `okey`
-    }
-     else if (((speed - 70)/5) > 12){ //if the points are above 12 prints licence suspended
-           return `licence suspended`
-         }
-    else{  // calculates the current (speed - 70 divided by 5) to output points
-       return "points:" + ((speed - 70)/5)
-    }
+   if(speed > 0 && speed <=70){
+       return "Ok"
+   }else if(speed > 70){
+       let SpeedLimit = ((speed - 70)/5)
+       if (SpeedLimit > 12){
+           return "License suspended"
+       }else{
+           return `Points: ${Math.ceil(SpeedLimit)}`
+       }
+   }else{
+       return "Please enter correct speed"
    }
-   //pass any speed value here
- console.log(speedDetector())
+}
+
+console.log(speedDetector(80))

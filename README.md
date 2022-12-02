@@ -45,7 +45,7 @@ https://www.aren.co.ke/payroll/taxrates.htm
 https://www.kra.go.ke/en/individual/calculate-tax/calculating-tax/paye
 
 
-To run this test pass in your salary and benefits in the arguments then run node salary.js
+To run this test pass in your salary and benefits in the arguments then run node salaryCalculator.js
 
 # Getting Started
 In order for you to use the content on this repo ensure you have the following:

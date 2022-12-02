@@ -2,10 +2,10 @@
   "name": "phase-1-wk1-code-challenge",
   "version": "1.0.0",
   "description": "wk1-code-challenge",
-  "main": "index.js",
+  "main": "salary.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node"
+    "start": "node salary.js"
   },
   "repository": {
     "type": "git",
